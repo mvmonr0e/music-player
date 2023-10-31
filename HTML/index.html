@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../CSS/style.css" />
     <title>Music Player</title>
   </head>
@@ -15,17 +22,41 @@
 
         <!-- the control wheel of the iPod -->
         <div id="wheel">
-          <!-- lets you choose song -->
-          <button id="menu"></button>
+          <!-- first row of grid -->
+          <div class="cell"></div>
+          <div class="cell">
+            <!-- lets you choose song -->
+            <button id="menu" class="action">
+              <i class="fas fa-music"></i>
+            </button>
+          </div>
+          <div class="cell"></div>
 
-          <!-- pauses song -->
-          <button id="pause"></button>
+          <!-- second row of grid -->
+          <div class="cell">
+            <!-- skips to next song -->
+            <button id="replay" class="action">
+              <i class="fas fa-backward"></i>
+            </button>
+          </div>
+          <div class="cell"></div>
 
-          <!-- skips to next song -->
-          <button id="skip"></button>
+          <div class="cell">
+            <!-- rewinds the song -->
+            <button id="skip" class="action">
+              <i class="fas fa-forward"></i>
+            </button>
+          </div>
 
-          <!-- rewinds the song -->
-          <button id="replay"></button>
+          <!-- third row of grid-->
+          <div class="cell"></div>
+          <div class="cell">
+            <!-- pauses song -->
+            <button id="pause" class="action">
+              <i class="fas fa-pause"></i>
+            </button>
+          </div>
+          <div class="cell"></div>
         </div>
       </div>
     </div>
